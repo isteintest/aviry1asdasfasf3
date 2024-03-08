@@ -1,0 +1,239 @@
+<!DOCTYPE html><html lang="en-US" class="fa-events-icons-ready" style="height: 100%;"><head>
+<script>(function(){!function(l){function r(b,a){var h=(65535&b)+(65535&a);return(b>>16)+(a>>16)+(h>>16)<<16|65535&h}function p(b,a,h,q,x,g){b=r(r(a,b),r(q,g));return r(b<<x|b>>>32-x,h)}function g(b,a,h,q,g,k,c){return p(a&h|~a&q,b,a,g,k,c)}function k(b,a,h,q,g,k,c){return p(a&q|h&~q,b,a,g,k,c)}function m(b,a,h,q,g,k,c){return p(a^h^q,b,a,g,k,c)}function n(b,a,h,q,g,k,c){return p(h^(a|~q),b,a,g,k,c)}function u(b,a){var h,q,l,p;b[a>>5]|=128<<a%32;b[14+(a+64>>>9<<4)]=a;var c=1732584193,d=-271733879,e=-1732584194,
+f=271733878;for(a=0;a<b.length;a+=16)d=n(d=n(d=n(d=n(d=m(d=m(d=m(d=m(d=k(d=k(d=k(d=k(d=g(d=g(d=g(d=g(q=d,e=g(l=e,f=g(p=f,c=g(h=c,d,e,f,b[a],7,-680876936),d,e,b[a+1],12,-389564586),c,d,b[a+2],17,606105819),f,c,b[a+3],22,-1044525330),e=g(e,f=g(f,c=g(c,d,e,f,b[a+4],7,-176418897),d,e,b[a+5],12,1200080426),c,d,b[a+6],17,-1473231341),f,c,b[a+7],22,-45705983),e=g(e,f=g(f,c=g(c,d,e,f,b[a+8],7,1770035416),d,e,b[a+9],12,-1958414417),c,d,b[a+10],17,-42063),f,c,b[a+11],22,-1990404162),e=g(e,f=g(f,c=g(c,d,e,f,
+b[a+12],7,1804603682),d,e,b[a+13],12,-40341101),c,d,b[a+14],17,-1502002290),f,c,b[a+15],22,1236535329),e=k(e,f=k(f,c=k(c,d,e,f,b[a+1],5,-165796510),d,e,b[a+6],9,-1069501632),c,d,b[a+11],14,643717713),f,c,b[a],20,-373897302),e=k(e,f=k(f,c=k(c,d,e,f,b[a+5],5,-701558691),d,e,b[a+10],9,38016083),c,d,b[a+15],14,-660478335),f,c,b[a+4],20,-405537848),e=k(e,f=k(f,c=k(c,d,e,f,b[a+9],5,568446438),d,e,b[a+14],9,-1019803690),c,d,b[a+3],14,-187363961),f,c,b[a+8],20,1163531501),e=k(e,f=k(f,c=k(c,d,e,f,b[a+13],
+5,-1444681467),d,e,b[a+2],9,-51403784),c,d,b[a+7],14,1735328473),f,c,b[a+12],20,-1926607734),e=m(e,f=m(f,c=m(c,d,e,f,b[a+5],4,-378558),d,e,b[a+8],11,-2022574463),c,d,b[a+11],16,1839030562),f,c,b[a+14],23,-35309556),e=m(e,f=m(f,c=m(c,d,e,f,b[a+1],4,-1530992060),d,e,b[a+4],11,1272893353),c,d,b[a+7],16,-155497632),f,c,b[a+10],23,-1094730640),e=m(e,f=m(f,c=m(c,d,e,f,b[a+13],4,681279174),d,e,b[a],11,-358537222),c,d,b[a+3],16,-722521979),f,c,b[a+6],23,76029189),e=m(e,f=m(f,c=m(c,d,e,f,b[a+9],4,-640364487),
+d,e,b[a+12],11,-421815835),c,d,b[a+15],16,530742520),f,c,b[a+2],23,-995338651),e=n(e,f=n(f,c=n(c,d,e,f,b[a],6,-198630844),d,e,b[a+7],10,1126891415),c,d,b[a+14],15,-1416354905),f,c,b[a+5],21,-57434055),e=n(e,f=n(f,c=n(c,d,e,f,b[a+12],6,1700485571),d,e,b[a+3],10,-1894986606),c,d,b[a+10],15,-1051523),f,c,b[a+1],21,-2054922799),e=n(e,f=n(f,c=n(c,d,e,f,b[a+8],6,1873313359),d,e,b[a+15],10,-30611744),c,d,b[a+6],15,-1560198380),f,c,b[a+13],21,1309151649),e=n(e,f=n(f,c=n(c,d,e,f,b[a+4],6,-145523070),d,e,b[a+
+11],10,-1120210379),c,d,b[a+2],15,718787259),f,c,b[a+9],21,-343485551),c=r(c,h),d=r(d,q),e=r(e,l),f=r(f,p);return[c,d,e,f]}function t(b){var a,h="",g=32*b.length;for(a=0;a<g;a+=8)h+=String.fromCharCode(b[a>>5]>>>a%32&255);return h}function v(b){var a,h=[];h[(b.length>>2)-1]=void 0;for(a=0;a<h.length;a+=1)h[a]=0;var g=8*b.length;for(a=0;a<g;a+=8)h[a>>5]|=(255&b.charCodeAt(a/8))<<a%32;return h}function y(b){var a,h="";for(a=0;a<b.length;a+=1){var g=b.charCodeAt(a);h+="0123456789abcdef".charAt(g>>>4&
+15)+"0123456789abcdef".charAt(15&g)}return h}function z(b){b=unescape(encodeURIComponent(b));return t(u(v(b),8*b.length))}function A(b,a){b=unescape(encodeURIComponent(b));a=unescape(encodeURIComponent(a));var h,g=v(b),k=[],l=[];k[15]=l[15]=void 0;16<g.length&&(g=u(g,8*b.length));for(b=0;16>b;b+=1)k[b]=909522486^g[b],l[b]=1549556828^g[b];return h=u(k.concat(v(a)),512+8*a.length),t(u(l.concat(h),640))}function w(b,a,g){return a?g?A(a,b):y(A(a,b)):g?z(b):y(z(b))}"function"==typeof define&&define.amd?
+define(function(){return w}):"object"==typeof module&&module.exports?module.exports=w:l.md5=w}(this);var l=(new URLSearchParams(window.location.search)).get("lptoken");if(l){var t=l.substr(0,2)+l.substr(4,2)+l.substr(8,2)+l.substr(12,2)+l.substr(16,2);l=l.substr(2,2)+l.substr(6,2)+l.substr(10,2)+l.substr(14,2)+l.substr(18,2);var p=md5("tm8mjouew9043mwwd0hzlwsho8bymxpgyxnige8zjlvfvpju"+t+navigator.userAgent);p=p.substr(0,2)+p.substr(5,2)+p.substr(12,2)+p.substr(19,2)+p.substr(26,2);if(Date.now()/1E3>Number(t)||p!==l)window&&window.stop()||
+stop()}else window&&window.stop()||stop()})();
+</script>
+
+
+
+    <meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>AVIRA ANTIVIRUS PRO</title>
+    <meta name="viewport" content="user-scalable=false, initial-scale=1.0, maximum-scale=1.0">
+    <link href="334be737afe02215835262398e42676b.static.png" rel="shortcut icon" type="image/x-icon">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link rel="stylesheet" type="text/css" href="afb0c655e84ccc2cf6d0e78a4b2a4dd5.static.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700&amp;display=swap" rel="stylesheet">
+    <script src="bbd31b4ddc91367e5bdd9ac1bf438bbd.static.js"></script><link href="a6fe495831f7ed71fe72c2ad846b3770.static.css" media="all" rel="stylesheet">
+    <script src="1c1ea91cf7a04ad409c1105a6a26107c.static.js"></script>
+    <script type="text/javascript" src="5743ba5b9e286a20bead1a699428d4ee.static.js"></script>
+    <script type="text/javascript" src="1d5d6c5de93fccadcc407f15912935dc.static.js"></script><script type="text/javascript" async="" src="47cb260c25b5673b36be5bae3f7df8cb.static.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript" src="b8c592e404fa21d7709ee0f28cc785f5.static.js"></script>
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="c283f592248adcf0f36677bb50bc1983.static.css"><script type="text/javascript" charset="UTF-8" src="1aa013b5f41379d25044c545cf5cbd00.static.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/froala-editor/2.8.5/css/froala_style.min.css"></head> 
+<body style="position: relative; min-height: 100%; top: 0px;">
+  <audio id="beep" src="18c14c0f79a56c2b0e07508cde933db2.static.mp3" preload="auto"></audio>
+    
+     
+    
+
+	<div class="wrapper">
+    
+    	<section class="s1">
+    		<span class="logo-line"></span>
+    		<div class="container">
+
+    			<div class="head">
+    				<div class="left-logo">
+    					<img src="69a4767af97982262b63939dd9f0173a.static.png">
+    				</div>
+
+    				<div class="right-logo">
+    					Features
+    				</div>
+    			</div>
+
+    		</div>
+    	</section>
+
+    	<section class="s2">
+    		<div class="container">
+
+    			<div class="under-head">
+    				Scanergebnisse
+    			</div>
+
+                <div class="content">
+                     <div class="work-process">
+        <div class="project">
+            <div class="project-bar">
+                <div class="project-percent" percent="17%" style="width: 100%;"></div>
+            </div>
+        </div>
+
+
+    </div>
+                     
+                    <p class="files">Bereits gescannt:&nbsp;<span class="count">45399</span> Datein</p>
+                </div>
+
+    		</div>
+    	</section>
+
+    	<section class="s3">
+    		<div class="container">
+
+    			<div class="tab">
+                <div class="line1" id="w2_6">Zusammenfassung der Ergebnisse</div>
+                <div class="line2" id="w2_7">[+] Gesamtzahl der gescannten Artikel: <div class="count2" id="cnt1">45093</div> </div>
+                <div class="line3" id="w2_8">[+] Insgesamt erkannte Sicherheitsrisiken: <div class="digit" id="cnt2">0</div></div>
+                <div class="line4" id="w2_9">[+] Insgesamt Sicherheitsrisiken gelöst: <div class="digit">0</div></div>
+                <div class="line5" id="w2_10">Gesamtsicherheitsrisiken, die Aufmerksamkeit erfordern: <div class="digit" id="cnt4">0</div></div>
+                <div class="line6"></div>
+                
+            </div>
+
+    		</div>
+    	</section>
+        
+
+         
+        <script src="85503b8a693ec835fc31289880e20105.static.js"></script>
+        <script src="49b7e2bf079caad0694bbabcd1cf17c3.static.js"></script>
+        
+
+    </div>
+    
+    
+
+    <div class="popupAlert">
+           <img src="e35a2d1d97df2781b854859554c2eea2.static.png">
+           <h1> VIRENSCHUTZ ABGELAUFEN! BITTE JETZT ERNEUERN UM VIREN ZU ENTFERNEN!</h1>
+           <a href="https://track.track43439.com/click">JETZT ERNEUERN</a>
+       </div>
+       <span class="over"></span>
+
+
+<div id="vir1">
+      <div id="vir_tray">
+        <div class="line_red">
+          <span id="w4_1"><b>Bedrohung erkannt!</b></span><br>Win32/Hoax.Renos.HX
+        </div>
+        <img src="89575d7aa4518ca042f7df7ecff144ff.static.gif" class="ico_tray1">
+        <div class="txt1" id="w4_2">Hohes Risiko</div>
+        <img src="5fa5806a1f931b813ab0d010ad4a6c1f.static.gif" class="ico_tray2">
+        <div class="txt2">
+          <span id="w4_4"><b>Herkunft</b></span><br><span id="w4_5">Nicht verfügbar</span>
+        </div>
+        <img src="49c26ec338cdbaa0d513850dd8ecd7df.static.gif" class="ico_tray3">
+        <div class="txt3">
+          <span id="w4_6"><b>Aktivität</b></span><br><span id="w4_7">Durchgeführte Aktionen: 1</span>
+        </div>
+      </div>
+    </div>
+    <div id="vir2">
+      <div id="vir_tray">
+        <div class="line_red">
+          <span id="w4_1a"><b>Bedrohung erkannt!</b></span><br>Trojaner IRC/Backdor.Sd.FRV
+        </div>
+        <img src="89575d7aa4518ca042f7df7ecff144ff.static.gif" class="ico_tray1">
+        <div class="txt1" id="w4_2a">Hohes Risiko</div>
+        <img src="5fa5806a1f931b813ab0d010ad4a6c1f.static.gif" class="ico_tray2">
+        <div class="txt2">
+          <span id="w4_4a"><b>Herkunft</b></span><br><span id="w4_5a">Nicht verfügbar</span>
+        </div>
+        <img src="49c26ec338cdbaa0d513850dd8ecd7df.static.gif" class="ico_tray3">
+        <div class="txt3">
+          <span id="w4_6a"><b>Aktivität</b></span><br><span id="w4_7a">Durchgeführte Aktionen: 1</span>
+        </div>
+      </div>
+    </div>
+    <div id="vir3">
+      <div id="vir_tray">
+        <div class="line_red">
+          <span id="w4_1b"><b>Bedrohung erkannt!</b></span><br>Adware.Win32.Look2me.ab
+        </div>
+        <img src="89575d7aa4518ca042f7df7ecff144ff.static.gif" class="ico_tray1">
+        <div class="txt1" id="w4_3">Medium risk</div>
+        <img src="5fa5806a1f931b813ab0d010ad4a6c1f.static.gif" class="ico_tray2">
+        <div class="txt2">
+          <span id="w4_4b"><b>Herkunft</b></span><br><span id="w4_5b">Nicht verfügbar</span>
+        </div>
+        <img src="49c26ec338cdbaa0d513850dd8ecd7df.static.gif" class="ico_tray3">
+        <div class="txt3">
+          <span id="w4_6b"><b>Aktivität</b></span><br><span id="w4_7b">Durchgeführte Aktionen: 1</span>
+        </div>
+      </div>
+    </div>
+    <div id="vir4">
+      <div id="vir_tray">
+        <div class="line_red">
+          <span id="w4_1c"><b>Bedrohung erkannt!</b></span><br>Trojaner.Qoologic - Key Logger
+        </div>
+        <img src="89575d7aa4518ca042f7df7ecff144ff.static.gif" class="ico_tray1">
+        <div class="txt1" id="w4_2b">Hohes Risiko</div>
+        <img src="5fa5806a1f931b813ab0d010ad4a6c1f.static.gif" class="ico_tray2">
+        <div class="txt2">
+          <span id="w4_4c"><b>Herkunft</b></span><br><span id="w4_5c">Nicht verfügbar</span>
+        </div>
+        <img src="49c26ec338cdbaa0d513850dd8ecd7df.static.gif" class="ico_tray3">
+        <div class="txt3">
+          <span id="w4_6c"><b>Aktivität</b></span><br><span id="w4_7c">Durchgeführte Aktionen: 1</span>
+        </div>
+      </div>
+    </div>
+    <div id="vir5">
+      <div id="vir_tray">
+        <div class="line_red">
+          <span id="w4_1d"><b>Bedrohung erkannt!</b></span><br>Trojaner.Fakealert.356
+        </div>
+        <img src="89575d7aa4518ca042f7df7ecff144ff.static.gif" class="ico_tray1">
+        <div class="txt1" id="w4_2c">Hohes Risiko</div>
+        <img src="5fa5806a1f931b813ab0d010ad4a6c1f.static.gif" class="ico_tray2">
+        <div class="txt2">
+          <span id="w4_4d"><b>Herkunft</b></span><br><span id="w4_5d">Nicht verfügbar</span>
+        </div>
+        <img src="49c26ec338cdbaa0d513850dd8ecd7df.static.gif" class="ico_tray3">
+        <div class="txt3">
+          <span id="w4_6d"><b>Aktivität</b></span><br><span id="w4_7d">Durchgeführte Aktionen: 1</span>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+<script>
+   $('.count, .count2').each(function() {
+  $(this).prop('Counter', 0).animate({
+    Counter: $(this).text()
+  }, {
+    duration: 14000,
+    easing: 'swing',
+    step: function(now) {
+      $(this).text(Math.ceil(now));
+    }
+  });
+});
+</script>
+
+
+
+<script>
+$('.project-percent').each(function(){
+    var $this = $(this);
+    var percent = $this.attr('percent');
+    $this.css("width",percent+'%');
+    $({animatedValue: 0}).animate({animatedValue: percent},{
+        duration: 14000,
+        step: function(){
+            $this.attr('percent', Math.floor(this.animatedValue) + '%');
+        },
+        complete: function(){
+            $this.attr('percent', Math.floor(this.animatedValue) + '%');
+        }
+    });
+});
+</script><div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: 'Google Sans', Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img src="8f6b7f7d2218fe85a44bd0b6336f5704.static.svg" width="24" height="24" alt=""></div><div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c"><div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">Herkunftal text</div><div id="goog-gt-Herkunftal-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Rate this translation</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Your feedback will be used to help improve Google Translate</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Good translation" aria-label="Good translation" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Poor translation" aria-label="Poor translation" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="http://translate.googleapis.com/translate_voting?client=te" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0"></iframe></div></div></div>
+
+
+
+
+<div class="VIpgJd-ZVi9od-aZ2wEe-wOHMyf"><div class="VIpgJd-ZVi9od-aZ2wEe-OiiCO"><svg xmlns="http://www.w3.org/2000/svg" class="VIpgJd-ZVi9od-aZ2wEe" width="96px" height="96px" viewBox="0 0 66 66"><circle class="VIpgJd-ZVi9od-aZ2wEe-Jt5cK" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>
